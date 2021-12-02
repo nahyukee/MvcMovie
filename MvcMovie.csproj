@@ -2,7 +2,6 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>aspnet-MvcMovie-D2856CFB-9890-480E-87AF-A112C116407F</UserSecretsId>
   </PropertyGroup>
