@@ -16,5 +16,6 @@
     <WebStackScaffolding_DbContextTypeFullName>MvcMovie.Data.MvcMovieContext</WebStackScaffolding_DbContextTypeFullName>
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
     <WebStackScaffolding_IsViewGenerationSelected>True</WebStackScaffolding_IsViewGenerationSelected>
+    <NameOfLastUsedPublishProfile>C:\Users\Edwar\source\repos\Projects\MvcMovie\MvcMovie\Properties\PublishProfiles\MvcMoviesEdward - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>

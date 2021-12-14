@@ -5,6 +5,128 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+.checked {
+    color: orange;
+}
+
+.fa-star {
+    cursor: pointer;
+}
+
+
+.card-columns .card:hover .card-img {
+    opacity: 1;
+}
+
+.card-columns .card-body {
+    height: 8rem;
+    font-family: 'Nunito', sans-serif;
+    background: #fbfafd;
+    text-align:center;
+}
+
+.card-columns .card-img {
+    height: 18.5rem;
+    vertical-align: auto;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: contain; /* Resize the background image to cover the entire container */
+    opacity: .8;
+}
+
+
+.card-columns .card:hover {
+    transform: scale(1.05);
+    z-index: 4;
+    box-shadow: 0 10px 20px rgba(37,33,82,.12), 0 4px 8px rgba(37,33,82,.06);
+}
+
+
+
+/* Provide sufficient contrast against white background */
+a {
+    color: #0366d6;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+
+p {
+    font-family: 'Nunito', sans-serif;
+}
+
+h1 {
+    font-family: 'Nunito', sans-serif;
+}
+
+ul {
+    font-family: 'Nunito', sans-serif;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+    font-family: 'Nunito', sans-serif;
+}
+/*Backgrounds*/
+
+
+.bg-footer {
+    background: -webkit-linear-gradient(110deg, #252152 60%, #e9a8a6 60%);
+    background: -o-linear-gradient(110deg, #252152 60%, #e9a8a6 60%);
+    background: -moz-linear-gradient(110deg, #252152 60%, #e9a8a6 60%);
+    background: linear-gradient(110deg, #252152 60%, #e9a8a6 60%);
+}
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -329,6 +451,7 @@ label {
 
 button {
   border-radius: 0;
+  margin: 1px,1px,1px,1px;
 }
 
 button:focus:not(:focus-visible) {
@@ -3962,7 +4085,10 @@ textarea.form-control-lg {
 }
 
 .navbar {
-  position: relative;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index:100;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -4442,15 +4568,17 @@ textarea.form-control-lg {
 }
 
 .card {
-  position: relative;
-  display: flex;
+  position:relative;
+  display: inline-flex;
   flex-direction: column;
+  width:200px;
   min-width: 0;
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
+  margin:50px 0px 0px 0px;
 }
 .card > hr {
   margin-right: 0;
@@ -4481,7 +4609,8 @@ textarea.form-control-lg {
 }
 
 .card-title {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
+
 }
 
 .card-subtitle {
